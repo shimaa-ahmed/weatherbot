@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style background: green;>
+
+  </style>
+  <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "6e1bf812-82de-42c1-bae2-9c7466e440a0", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "d6f3d33c-fa1f-4669-9c59-ef32cfb170f5", // The ID of your service instance.
+      onLoad: function (instance) { instance.render(); }
+    };
+    setTimeout(function () {
+      const t = document.createElement('script');
+      t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+      document.head.appendChild(t);
+    });
+  </script>
+</head>
+
+<body><img src="weatherbg.jpg" alt="HTML5 Icon" style="width:128px;height:128px;"></body>
+
+</html>
